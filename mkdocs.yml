@@ -1,6 +1,6 @@
 site_name: Location API Leermodule
 site_url: https://www.pdok.nl/kennis
-site_description: Een leermodule met achtergrondinformatie en oefeningen om te leren werken met OGC API's van PDOK
+site_description:  Deze leermodule bestaat uit achtergrondinformatie en oefeningen om te leren werken met de Location API van PDOK.
 repo_url: https://github.com/PDOK/leermodule-location-api/
 edit_uri: edit/master/docs/
 theme:
