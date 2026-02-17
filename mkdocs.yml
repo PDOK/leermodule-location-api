@@ -1,0 +1,52 @@
+site_name: Location API Leermodule
+site_url: https://www.pdok.nl/kennis
+site_description:  Deze leermodule bestaat uit achtergrondinformatie en oefeningen om te leren werken met de Location API van PDOK.
+repo_url: https://github.com/PDOK/leermodule-location-api/
+edit_uri: edit/master/docs/
+theme:
+  language: nl
+  name: material
+  palette:
+   primary: custom
+   accent: light blue
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - navigation.top
+    - header.autohide
+    - content.code.copy
+  logo: assets/pdok.png
+  favicon: assets/pdok.png
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+plugins:
+  - search:
+      lang: nl
+nav:
+    - Introductie: index.md
+    - Achtergrondinformatie: 
+        - Introductie: achtergrondinformatie/Introductie.md
+        - Wat is geocoderen?: achtergrondinformatie/Wat is geocoderen.md
+        - Terugblik: achtergrondinformatie/Terugblik.md
+    - Location API - Search: 
+        - Introductie: search/Introductie.md
+        - Verken Search in de browser: search/Verken Search in de browser.md
+        - Zoek locaties met python: search/Zoek locaties met python.md
+        - Terugblik: search/Terugblik.md
+    - Afronding: Afronding.md
+    - Community: Community.md
+
