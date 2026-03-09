@@ -17,7 +17,7 @@ De API dwingt je af om bewust te kiezen welke collecties je wilt doorzoeken. Zon
 
 ## Collecties activeren
 
-Standaard zoekt het endpoint niet in alle beschikbare collecties. Een collectie wordt pas actief gebruikt in zoekopdrachten wanneer je een `version`-parameter toevoegt.
+Standaard zoekt het endpoint niet in alle beschikbare collecties. Een collectie wordt pas actief gebruikt in zoekopdrachten wanneer je een collection inclusief `version` toevoegt.
 
 Voorbeeld: alleen adressen activeren:
 
