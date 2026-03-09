@@ -20,7 +20,7 @@ curl "https://api.pdok.nl/kadaster/location-api/v1-demo/collections?f=json"
 
 ---
 ## Oefening 3 – Zoek woonplaatsen
-➡️ Activeer zoeken alleen woonplaatsen:
+➡️ Activeer zoekenalleen woonplaatsen:
 ```cmd
 curl "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Utr&woonplaats[version]=1"
 ```
