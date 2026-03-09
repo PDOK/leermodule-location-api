@@ -10,15 +10,11 @@ Dit is het moment om even te reflecteren. Dit helpt je om te ontdekken wat je he
 
     Na het afronden van dit onderdeel:
 
-    - Weet je uit welke verschillende onderdelen de OGC API (- Features) bestaat en wat die onderdelen doen;
-    - Weet je welke onderdelen PDOK heeft geïmplementeerd; 
-    - Kun je de landing page van de PDOK OGC API's gebruiken:
-	    - Kun je voorbeelden van data via de landing page bekijken; 
-	    - 	Kun je de URL's van de OGC API - Features vinden en gebruiken; 
-    - Kun je met de commandline featuredata opvragen;
-    - Kun je een API GET request samenstellen met een bbox, pagination, CRS en feature-id;
-    - Weet je hoe een webmap werkt;
-    - Kun je een OGC API - Features op een webmap tonen en de gebruiker hiermee laten interacteren. 
+    - Weet je uit welke verschillende onderdelen de Location API bestaat en wat die onderdelen doen;
+    - Kun je de URL's van de Location API gebruiken om Features vinden en gebruiken; 
+    - Kun je met de commandline zoekopdrachten doen;
+    - Kun je een API GET request samenstellen met een bbox, CRS, limit 
+
 
 !!! warning "TO DO"
 
