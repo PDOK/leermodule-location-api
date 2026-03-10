@@ -25,12 +25,20 @@ Voorbeeld: alleen adressen activeren:
 curl "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Dam&adres[version]=1"
 ```
 
+Geeft ook een opmerkelijk resultaat. Gebruik `--globoff` zodat Curl de `[` en `]` goed kan interpreteren:
+
+
+```cmd
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Dam&adres[version]=1"
+```
+
 Dit zoekt alleen in de adrescollectie naar "Dam".
+
 
 Meerdere collecties tegelijk:
 
 ```cmd
-curl "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Rot&adres[version]=1&woonplaats[version]=1"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Rot&adres[version]=1&woonplaats[version]=1"
 ```
 
 Nu worden zowel adressen als woonplaatsen doorzocht.
@@ -38,7 +46,7 @@ Nu worden zowel adressen als woonplaatsen doorzocht.
 Zoek uit welke collecties je kan gebruiken in de zoek opdracht
 
 ```cmd
-curl "https://api.pdok.nl/kadaster/location-api/v1-demo/collections"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/collections"
 ```
 Welke collecties worden het meest gebruikt en waarom? 
 
@@ -47,11 +55,27 @@ Welke collecties worden het meest gebruikt en waarom?
 Je kunt de zoekresultaten beïnvloeden door prioriteiten in te stellen per collectie met de `relevance`-parameter:
 
 ```cmd
-curl "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Maas&adres[version]=1&adres[relevance]=0.7&woonplaats[version]=1&woonplaats[relevance]=0.3"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Maas&adres[version]=1&adres[relevance]=0.7&woonplaats[version]=1&woonplaats[relevance]=0.3"
 ```
 
 Adressen krijgen hier een hogere prioriteit (0.7) dan woonplaatsen (0.3).
 Bedenkt situaties waarin het beinvloeden van volgorde van de zoekresultaten nodig is in applicaties
+
+Voorbeeld met verschillende prioriteiten:
+
+```cmd
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=utrecht&gemeentegebied[relevance]=0.1&gemeentegebied[version]=1&provinciegebied[relevance]=0.9&provinciegebied[version]=1&woonplaats[relevance]=0.1&woonplaats[version]=1&f=json"
+```
+
+```cmd
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=utrecht&gemeentegebied[relevance]=0.9&gemeentegebied[version]=1&provinciegebied[relevance]=0.1&provinciegebied[version]=1&woonplaats[relevance]=0.1&woonplaats[version]=1&f=json"
+```
+
+```cmd
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=utrecht&gemeentegebied[relevance]=0.1&gemeentegebied[version]=1&provinciegebied[relevance]=0.1&provinciegebied[version]=1&woonplaats[relevance]=0.9&woonplaats[version]=1&f=json"
+```
+
+Vergelijk de verschillen in volgorde tussen provincie-, gemeente- en woonplaats-prioritering.
 
 ## Bbox-filtering
 
@@ -94,7 +118,7 @@ perfect in het midden van het RD stelsel ligt. Is dit toeval, dat bovenstaande z
 Combineer alle parameters voor volledige controle:
 
 ```cmd
-curl "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Arnhem&adres[version]=1&adres[relevance]=0.5&woonplaats[version]=1&woonplaats[relevance]=0.5&functioneel_gebied[version]=1&functioneel_gebied[relevance]=0.5&gemeentegebied[version]=1&gemeentegebied[relevance]=0.5&geografisch_gebied[version]=1&geografisch_gebied[relevance]=0.5&perceel[version]=1&perceel[relevance]=0.5&provinciegebied[version]=1&provinciegebied[relevance]=0.5"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Arnhem&adres[version]=1&adres[relevance]=0.5&woonplaats[version]=1&woonplaats[relevance]=0.5&functioneel_gebied[version]=1&functioneel_gebied[relevance]=0.5&gemeentegebied[version]=1&gemeentegebied[relevance]=0.5&geografisch_gebied[version]=1&geografisch_gebied[relevance]=0.5&perceel[version]=1&perceel[relevance]=0.5&provinciegebied[version]=1&provinciegebied[relevance]=0.5"
 ```
 
 Deze query zoekt in alle beschikbare collecties met gelijke prioriteit.
