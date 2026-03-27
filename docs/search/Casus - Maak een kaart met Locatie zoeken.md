@@ -103,10 +103,23 @@ Voeg logica toe in de main.js voor het selecteren van een item uit de selectie l
 
 Test of het zoeken werkt in je browser.
 
-## Extra Test het resultaat en vergelijk het met de kaart die wij als oplossing geven
+## Extra Test het resultaat en vergelijk het met de kaart die we als oplossing geven
 
 **:arrow_right: Bekijk** [../resultaat/index.html](../resultaat/index.html)
 
 Wat zijn de verschillen tussen deze kaart en jou resultaat.
 
 Het belangrijkste verschil is de opmaak van de pagina met CSS. CVSS valt buiten de scope van deze leermodule maar veel informatie is hier voor te vinden op internet gebruik je favoriete zoekmachine en zoek naar "Learn CSS"
+
+Je hebt nu voldoende kennis over de Location API 
+
+Mocht je het leuk vinden dan kan je de volgende uitdagingen doen om je kaart te verbeteren en een pull request op deze  leermodule om anderen te helpen om deze uitdagingen ook te kunnen voltooien. 
+
+## Extra voeg de geometrie toe van de feature die geselecteerd is op de kaart
+
+!!! warning "TO DO (please make a pull request with your solution)"
+
+## Extra toon attribuut data van geselecteerd feature
+
+!!! warning "TO DO (please make a pull request with your solution)"
+
