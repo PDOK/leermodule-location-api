@@ -1,6 +1,10 @@
 
 # Zoeken met het `/search` endpoint
 
+## Voorbereiding
+
+We gaan de API bestuderen met Curl. Hoe dit te doen kan je lezen in [Bevraag OGC API - Features met curl](https://pdok.github.io/leermodule-ogc-api/features/Bevraag%20OGC%20API%20-%20Features%20met%20curl/)
+
 Het `/search` endpoint ondersteunt tekstgebaseerd zoeken over meerdere collecties.
 
 ## Minimale query
@@ -8,7 +12,7 @@ Het `/search` endpoint ondersteunt tekstgebaseerd zoeken over meerdere collectie
 Een eenvoudige zoekopdracht vereist alleen een zoekterm (`q`-parameter), maar geeft een opmerkelijk resultaat:
 
 ```cmd
-curl "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=am"
+curl "https://api.pdok.nl/kadaster/location-api/v1/search?q=am"
 ```
 
 Wat betekend de response en wat moet je voor "foo" invullen?
@@ -22,14 +26,14 @@ Standaard zoekt het endpoint niet in alle beschikbare collecties. Een collectie 
 Voorbeeld: alleen adressen activeren:
 
 ```cmd
-curl "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Dam&adres[version]=1"
+curl "https://api.pdok.nl/kadaster/location-api/v1/search?q=Dam&adres[version]=1"
 ```
 
 Geeft ook een opmerkelijk resultaat. Gebruik `--globoff` zodat Curl de `[` en `]` goed kan interpreteren:
 
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Dam&adres[version]=1"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=Dam&adres[version]=1"
 ```
 
 Dit zoekt alleen in de adrescollectie naar "Dam".
@@ -38,7 +42,7 @@ Dit zoekt alleen in de adrescollectie naar "Dam".
 Meerdere collecties tegelijk:
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Rot&adres[version]=1&woonplaats[version]=1"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=Rot&adres[version]=1&woonplaats[version]=1"
 ```
 
 Nu worden zowel adressen als woonplaatsen doorzocht.
@@ -46,7 +50,7 @@ Nu worden zowel adressen als woonplaatsen doorzocht.
 Zoek uit welke collecties je kan gebruiken in de zoek opdracht
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/collections"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/collections"
 ```
 Welke collecties worden het meest gebruikt en waarom? 
 
@@ -55,7 +59,7 @@ Welke collecties worden het meest gebruikt en waarom?
 Je kunt de zoekresultaten beïnvloeden door prioriteiten in te stellen per collectie met de `relevance`-parameter:
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Maas&adres[version]=1&adres[relevance]=0.7&woonplaats[version]=1&woonplaats[relevance]=0.3"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=Maas&adres[version]=1&adres[relevance]=0.7&woonplaats[version]=1&woonplaats[relevance]=0.3"
 ```
 
 Adressen krijgen hier een hogere prioriteit (0.7) dan woonplaatsen (0.3).
@@ -64,15 +68,15 @@ Bedenkt situaties waarin het beinvloeden van volgorde van de zoekresultaten nodi
 Voorbeeld met verschillende prioriteiten:
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=utrecht&gemeentegebied[relevance]=0.1&gemeentegebied[version]=1&provinciegebied[relevance]=0.9&provinciegebied[version]=1&woonplaats[relevance]=0.1&woonplaats[version]=1&f=json"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=utrecht&gemeentegebied[relevance]=0.1&gemeentegebied[version]=1&provinciegebied[relevance]=0.9&provinciegebied[version]=1&woonplaats[relevance]=0.1&woonplaats[version]=1&f=json"
 ```
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=utrecht&gemeentegebied[relevance]=0.9&gemeentegebied[version]=1&provinciegebied[relevance]=0.1&provinciegebied[version]=1&woonplaats[relevance]=0.1&woonplaats[version]=1&f=json"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=utrecht&gemeentegebied[relevance]=0.9&gemeentegebied[version]=1&provinciegebied[relevance]=0.1&provinciegebied[version]=1&woonplaats[relevance]=0.1&woonplaats[version]=1&f=json"
 ```
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=utrecht&gemeentegebied[relevance]=0.1&gemeentegebied[version]=1&provinciegebied[relevance]=0.1&provinciegebied[version]=1&woonplaats[relevance]=0.9&woonplaats[version]=1&f=json"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=utrecht&gemeentegebied[relevance]=0.1&gemeentegebied[version]=1&provinciegebied[relevance]=0.1&provinciegebied[version]=1&woonplaats[relevance]=0.9&woonplaats[version]=1&f=json"
 ```
 
 Vergelijk de verschillen in volgorde tussen provincie-, gemeente- en woonplaats-prioritering.
@@ -82,7 +86,7 @@ Vergelijk de verschillen in volgorde tussen provincie-, gemeente- en woonplaats-
 Beperk zoekresultaten tot een geografisch gebied met bounding-box filtering:
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Arn&bbox=5.85,51.95,5.90,52.00&bbox-crs=http://www.opengis.net/def/crs/OGC/1.3/CRS84&woonplaats[version]=1"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=Arn&bbox=5.85,51.95,5.90,52.00&bbox-crs=http://www.opengis.net/def/crs/OGC/1.3/CRS84&woonplaats[version]=1"
 ```
 
 Resultaten worden alleen teruggegeven voor locaties binnen de opgegeven coördinaten.
@@ -96,7 +100,7 @@ Gebruik <https://vibhorsingh.com/boundingbox/> om coordinaten te vinden.
 Ontvang zoekresultaten in een ander coördinatensysteem (CRS) bijvoorbeeld:
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Onze+Lieve+Vrouwetoren&crs=http://www.opengis.net/def/crs/EPSG/0/28992&gebouw[version]=1"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=Onze+Lieve+Vrouwetoren&crs=http://www.opengis.net/def/crs/EPSG/0/28992&gebouw[version]=1"
 ```
 
 Dit voorbeeld retourneert coördinaten in RD (EPSG:28992) in plaats van WGS84
@@ -118,7 +122,7 @@ perfect in het midden van het RD stelsel ligt. Is dit toeval, dat bovenstaande z
 Combineer alle parameters voor volledige controle:
 
 ```cmd
-curl --globoff "https://api.pdok.nl/kadaster/location-api/v1-demo/search?q=Arnhem&adres[version]=1&adres[relevance]=0.5&woonplaats[version]=1&woonplaats[relevance]=0.5&functioneel_gebied[version]=1&functioneel_gebied[relevance]=0.5&gemeentegebied[version]=1&gemeentegebied[relevance]=0.5&geografisch_gebied[version]=1&geografisch_gebied[relevance]=0.5&perceel[version]=1&perceel[relevance]=0.5&provinciegebied[version]=1&provinciegebied[relevance]=0.5"
+curl --globoff "https://api.pdok.nl/kadaster/location-api/v1/search?q=Arnhem&adres[version]=1&adres[relevance]=0.5&woonplaats[version]=1&woonplaats[relevance]=0.5&functioneel_gebied[version]=1&functioneel_gebied[relevance]=0.5&gemeentegebied[version]=1&gemeentegebied[relevance]=0.5&geografisch_gebied[version]=1&geografisch_gebied[relevance]=0.5&perceel[version]=1&perceel[relevance]=0.5&provinciegebied[version]=1&provinciegebied[relevance]=0.5"
 ```
 
 Deze query zoekt in alle beschikbare collecties met gelijke prioriteit.
