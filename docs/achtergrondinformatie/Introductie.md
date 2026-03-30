@@ -1,21 +1,15 @@
 # Achtergrondinformatie
 
 !!! abstract "Leerdoelen"
-   
-    !!! warning "TO DO"
 
     Na het afronden van dit onderdeel:
 
-    - Ben je je bewust van de meerwaarde van geo-informatie;
-    - Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's; 
-    - Ben je bekend met PDOK en het Kadaster;
-    - Weet je wat een OGC API is en wat de mogelijkheden ervan zijn;
-    - Ken je voorbeelden van toepassingen met geo-informatie.
+    - Weet je wat geocoderen is en welke rol dit speelt binnen locatiegebaseerde diensten. 
 
-Met de Location API kun je geocoderen. Wat is **geocoderen** eigenlijk? En .... Dat behandelen we allemaal in dit onderdeel.  
+Centraal staat het concept **geocoderen**: het vertalen van een tekstuele locatiebeschrijving naar exacte coördinaten. Met geocoderen kun je adressen en plaatsnamen koppelen aan een specifieke plek op de kaart, waardoor toepassingen zoals routeplanning, kaartvisualisaties, data‑analyse en locatiegebaseerde interacties mogelijk worden. 
+
+Door gebruik te maken van informatie uit de Nederlandse basisregistraties – zoals de BAG en BRT TOP10NL – zorgt de Location API voor een efficiënte en betrouwbare ontsluiting van actuele geografische gegevens.
 
 ## Wat is geocoderen?
-
-Geo-informatie is alle informatie met een locatiecomponent. Hoe wordt dit precies opgeslagen en beschikbaar gesteld, en wat kun je hiermee? 
 
 [**Lees meer**](<Wat is geocoderen.md>)

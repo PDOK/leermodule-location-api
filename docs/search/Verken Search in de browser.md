@@ -1,58 +1,35 @@
 # Verken Search in de browser
 
-We gaan zelf de functionaliteit om locaties op te zoeken verkennen in de browser. Het Search endpoint is namelijk ook gewoon in de browser in een visuele weergave te gebruiken. 
+We gaan zelf de functionaliteit om locaties op te zoeken verkennen in de browser. Het Search endpoint is namelijk ook gewoon in de browser in een visuele weergave te gebruiken.
 
-## Introductie
+## Landing Page bevragen
 
-## Voorbereiding
+De landing page toont de hoofdingangen van de Location API. Bekijk de landingpage in je favoriete browser
 
-Klaarzetten benodigdheden
+De landingpage is te vinden op
+[https://api.pdok.nl/kadaster/location-api/v1/](https://api.pdok.nl/kadaster/location-api/v1/)
 
-## Uitvoering
+Kijk op deze pagina en bestudeerd de volgende links:
 
-**:arrow_right: Dit is een opdracht.** 
+- links naar `/api`
+- links naar `/collections`
+- links naar `/search`
 
-!!! warning "Waarschuwing"
+## Oefening
 
-    Dit is een waarschuwing
+➡️ Vraag de landingpage op en beantwoord:
 
-Dit is code tussendoor: `code`
+1. Welke link is het belangrijkste op deze pagina?
+2. Waar vind je de verwijzing naar de OpenAPI-specificatie?
 
-    Dit is code in een blok
+## Oefening
 
-!!! tip 
-
-    Dit is een tip
-
-!!! question "Vraag"
-
-    Dit is een vraag
-
-??? tip "Hint"
-
-    Dit is een hint die je moet uitklappen. 
-
-??? success "Bekijk het antwoord"
-    
-    Dit is het antwoord dat je moet uitklappen
-
-!!! info "Dit is extra info"
-
-    Dit is extra info
-
-Voorbeeld afbeelding:
-![Dit is de alt text van een afbeelding](../assets/pdok.png)
+Ga naar de search pagina. Kijk eens of je wat voor jou bekende locaties kan vinden via het zoekveld "Zoeken op Locatie". Kijk ook eens wat er gebeurd als je waardes veranderd voor de waardes Collection die te vinden zijn achter de knop met de schuifjes. w
 
 ## Evalueer het resultaat
 
-Is dit het resultaat dat je had verwacht? Waarom wel / niet? Etc. 
+Is dit het resultaat dat je had verwacht? Waarom wel / niet?
 
 ## Conclusie
 
-Gefeliciteerd, je hebt nu Search verkend in de browser. Laten we eens nagaan wat we allemaal hebben gezien:
-
-| Onderdeel | Beschrijving |
-| --- | --- |
-|   |   |
-|   |   |
-
+Gefeliciteerd, je hebt nu Search verkend in de browser.

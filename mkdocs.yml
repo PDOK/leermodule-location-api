@@ -1,5 +1,5 @@
 site_name: Location API Leermodule
-site_url: https://www.pdok.nl/kennis
+site_url: https://pdok.github.io/leermodule-location-api/
 site_description:  Deze leermodule bestaat uit achtergrondinformatie en oefeningen om te leren werken met de Location API van PDOK.
 repo_url: https://github.com/PDOK/leermodule-location-api/
 edit_uri: edit/master/docs/
@@ -45,7 +45,8 @@ nav:
     - Location API - Search: 
         - Introductie: search/Introductie.md
         - Verken Search in de browser: search/Verken Search in de browser.md
-        - Zoek locaties met python: search/Zoek locaties met python.md
+        - Geocoderen met Curl: search/Geocoderen met Curl.md
+        - Casus - maak een kaart met Locatie zoeken: search/Casus - Maak een kaart met Locatie zoeken.md
         - Terugblik: search/Terugblik.md
     - Afronding: Afronding.md
     - Community: Community.md

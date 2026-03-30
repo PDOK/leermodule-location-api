@@ -10,11 +10,7 @@ Dit is het moment om even te reflecteren. Dit helpt je om te ontdekken wat je he
     
     Na het afronden van dit onderdeel:
 
-    - Ben je je bewust van de meerwaarde van geo-informatie;
-    - Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's; 
-    - Ben je bekend met PDOK en het Kadaster;
-    - Weet je wat een OGC API is en wat de mogelijkheden ervan zijn;
-    - Ken je voorbeelden van toepassingen met geo-informatie.
+    - Ben je je bewust van de meerwaarde van geo-coderen
 
 !!! warning "TO DO"
 
