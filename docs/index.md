@@ -22,25 +22,17 @@ Deze leermodule is bedoeld voor GIS-specialisten en ontwikkelaars die gebruik wi
 
 !!! abstract "Leerdoelen"
 
-	!!! warning "TO DO"
-
 	Na voltooiing van de leermodule:
 
-	- Ben je je bewust van de meerwaarde van geo-informatie;
-	- Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's;
-	- Ben je bekend met PDOK en het Kadaster en wat zij doen;
-	- Ken je de mogelijkheden van geodata en kun je voorbeelden van toepassingen noemen;
-	- Weet je wat een OGC API is, hoe die in elkaar zit, kun je de verschillende onderdelen benoemen en wat die onderdelen doen;
-	- Weet je welke onderdelen van OGC API PDOK heeft geïmplementeerd en hoe PDOK dat heeft gedaan;
-	- Weet je hoe een webmap werkt;
-	- Kun je de landing page van de PDOK OGC API's gebruiken;
-	- Kun je de URL's van de OGC API's vinden en gebruiken;
-	- Kun je API GET requests samenstellen voor OGC API's:
-		- Kun je featuredata bevragen met OGC API - Features;
-		- Kun je tiles opvragen met OGC API - Tiles;
-	- Kun je OGC API's toevoegen aan een webmap.
+	- Weet je wat geocoderen is en welke rol dit speelt binnen locatiegebaseerde diensten. 
+	- Begrijp je hoe de PDOK Location API is opgebouwd en waarvoor je deze kunt gebruiken;
+	- Kun je adres‑ en locatiegegevens zoeken via de Location API;
+	- Kun je resultaten opvragen in verschillende coördinatenstelsels;
+	- Kun je brondata herkennen die door de Location API worden ontsloten;
+	- Kun je een eenvoudig API‑request samenstellen voor zoeken en geocoderen;
+	- Weet je op hoofdlijnen hoe de generieke zoekcomponent werkt en wanneer je deze kunt toepassen.
 
-	Kortom: je kunt straks OGC API's gebruiken en implementeren. 
+	Kortom: je kunt straks de PDOK Location API gebruiken en implementeren. 
 
 ## Benodigde voorkennis
 

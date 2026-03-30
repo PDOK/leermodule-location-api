@@ -8,13 +8,10 @@ Dit is het moment om even te reflecteren. Dit helpt je om te ontdekken wat je he
 !!! abstract "Leerdoelen"
 
     Na het afronden van dit onderdeel:
-
-    - Weet je uit welke verschillende onderdelen de OGC API (- Features) bestaat en wat die onderdelen doen;
-    - Weet je welke onderdelen PDOK heeft geïmplementeerd; 
-    - Kun je de landing page van de PDOK OGC API's gebruiken:
-    - Kun je voorbeelden van data via de landing page bekijken; 
-    - Kun je de URL's van de OGC API - Features vinden en gebruiken; 
-    - Kun je met de commandline featuredata opvragen;
-    - Kun je een API GET request samenstellen met een bbox, pagination, CRS en feature-id;
-    - Weet je hoe een webmap werkt;
-    - Kun je een OGC API - Features op een webmap tonen en de gebruiker hiermee laten interacteren. 
+   
+    - Begrijp je hoe de PDOK Location API is opgebouwd en waarvoor je deze kunt gebruiken;
+    - Kun je adres‑ en locatiegegevens zoeken via de Location API;
+    - Kun je resultaten opvragen in verschillende coördinatenstelsels;
+    - Kun je brondata herkennen die door de Location API worden ontsloten;
+    - Kun je een eenvoudig API‑request samenstellen voor zoeken en geocoderen;
+    - Weet je op hoofdlijnen hoe de generieke zoekcomponent werkt en wanneer je deze kunt toepassen.

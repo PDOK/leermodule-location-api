@@ -2,7 +2,7 @@
 
 We gaan zelf de functionaliteit om locaties op te zoeken verkennen in de browser. Het Search endpoint is namelijk ook gewoon in de browser in een visuele weergave te gebruiken.
 
-## – Landing Page bevragen
+## Landing Page bevragen
 
 De landing page toont de hoofdingangen van de Location API. Bekijk de landingpage in je favoriete browser
 
@@ -26,10 +26,9 @@ Kijk op deze pagina en bestudeerd de volgende links:
 
 Ga naar de search pagina. Kijk eens of je wat voor jou bekende locaties kan vinden via het zoekveld "Zoeken op Locatie". Kijk ook eens wat er gebeurd als je waardes veranderd voor de waardes Collection die te vinden zijn achter de knop met de schuifjes. w
 
-
 ## Evalueer het resultaat
 
-Is dit het resultaat dat je had verwacht? Waarom wel / niet? Etc.
+Is dit het resultaat dat je had verwacht? Waarom wel / niet?
 
 ## Conclusie
 

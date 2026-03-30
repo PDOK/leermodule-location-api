@@ -12,10 +12,10 @@ Het `/search` endpoint ondersteunt tekstgebaseerd zoeken over meerdere collectie
 Een eenvoudige zoekopdracht vereist alleen een zoekterm (`q`-parameter), maar geeft een opmerkelijk resultaat:
 
 ```cmd
-curl "https://api.pdok.nl/kadaster/location-api/v1/search?q=am"
+curl "https://api.pdok.nl/kadaster/location-api/v1/search?q=foo"
 ```
 
-Wat betekend de response en wat moet je voor "foo" invullen?
+Wat betekent de response en wat moet je voor "foo" invullen?
 
 De API dwingt je af om bewust te kiezen welke collecties je wilt doorzoeken. Zonder duidelijke keuze retourneert het endpoint geen resultaten. Dit beschermt tegen ongewilde zoekopdrachten over alle gegevens. Bovendien kan PDOK makkelijk nieuwe collecties toevoegen aan de API zonder dat jouw bestaande zoekopdrachten veranderen.
 
