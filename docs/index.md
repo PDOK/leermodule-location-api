@@ -36,7 +36,7 @@ Deze leermodule is bedoeld voor GIS-specialisten en ontwikkelaars die gebruik wi
 
 ## Benodigde voorkennis
 
-Om deze leermodule goed te kunnen volgen, is het handig dat je al kunt werken met (REST) API's en geodata. 
+Om deze leermodule goed te kunnen volgen, is het handig dat je al kunt werken met (REST) API's en geodata. Voor het uitvoeren van de opdrachten in deze leermodule wordt er van uitgegaan dat je de leermodules over [OGC API - Features en OGC API - tiles] https://pdok.github.io/leermodule-ogc-api/) doorlopen hebt. 
 
 ## Uit welke onderdelen bestaat deze leermodule?
 
