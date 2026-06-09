@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>maplibre example</title>
+    <script type="module" src="main.js"></script>
+    <style>
+      @import url("https://esm.sh/maplibre-gl/dist/maplibre-gl.css");
+
+      body {
+        margin: 0;
+      }
+
+      
+      #map {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #search {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+         width: 30vw; 
+        padding: 8px;
+        font-size: 16px;
+      }
+
+      #results {
+        position: absolute;
+        top: 55px;
+        left: 10px;
+        z-index: 1;
+        width: 30vw;
+        max-height: 200px;
+        overflow-y: auto;
+        background: white;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <input id="search" placeholder="Zoek adres…" " />
+    <div id="results"></div>
+
+    <div id="map"></div>
+  </body>
+</html>
