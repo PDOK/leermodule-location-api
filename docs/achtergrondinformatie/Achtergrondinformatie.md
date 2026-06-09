@@ -1,4 +1,16 @@
-# Wat is geocoderen?
+# Achtergrondinformatie
+
+!!! abstract "Leerdoelen"
+
+    Na het afronden van dit onderdeel:
+
+    - Weet je wat geocoderen is en welke rol dit speelt binnen locatiegebaseerde diensten. 
+
+Centraal staat het concept **geocoderen**: het vertalen van een tekstuele locatiebeschrijving naar exacte coördinaten. Met geocoderen kun je adressen en plaatsnamen koppelen aan een specifieke plek op de kaart, waardoor toepassingen zoals routeplanning, kaartvisualisaties, data‑analyse en locatiegebaseerde interacties mogelijk worden. 
+
+Door gebruik te maken van informatie uit de Nederlandse basisregistraties – zoals de BAG en BRT TOP10NL – zorgt de Location API voor een efficiënte en betrouwbare ontsluiting van actuele geografische gegevens.
+
+## Wat is geocoderen?
 
 Wanneer we op een website zoekt naar een adres, een postcode invullen in een formulier of een routeplanner gebruiken, gebeurt er achter de schermen iets belangrijks: het omzetten van beschreven locaties naar exacte coördinaten. Dit proces heet geocoderen.
 
@@ -24,3 +36,7 @@ Naast het omzetten van adressen naar coördinaten, bestaat ook het omgekeerde pr
 ## Geocoderen in de Nederlandse context: met informatie uit basisregistraties
 
 Voor Nederlandse overheden, bedrijven en ontwikkelaars is het belangrijk dat geocodering gebeurt met betrouwbare, actuele en gestandaardiseerde geografische gegevens. In Nederland worden deze gegevens beheerd binnen de verschillende basisregistraties, zoals de BAG (Basisregistratie Adressen en Gebouwen). Geocoderen met informatie uit deze basisregistraties zorgt voor een efficiënte ontsluiting van deze data, omdat het zoeken in en werken met deze gegevens via geocoderingsservices aanzienlijk wordt vereenvoudigd.
+
+## Samenvatting
+
+Je weet nu wat geocoderen is: het vertalen van een tekstuele locatiebeschrijving naar exacte coördinaten. Hiermee kun je bijvoorbeeld adressen als locaties op een kaart tonen. De PDOK Location API ondersteunt dit soort acties. 

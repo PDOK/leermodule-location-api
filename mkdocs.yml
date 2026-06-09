@@ -38,12 +38,9 @@ plugins:
       lang: nl
 nav:
     - Introductie: index.md
-    - Achtergrondinformatie: 
-        - Introductie: achtergrondinformatie/Introductie.md
-        - Wat is geocoderen?: achtergrondinformatie/Wat is geocoderen.md
-        - Terugblik: achtergrondinformatie/Terugblik.md
+    - Achtergrondinformatie: achtergrondinformatie/Achtergrondinformatie.md
     - Location API - Search: 
-        - Introductie: search/Introductie.md
+        - Introductie Search: search/Introductie.md
         - Verken Search in de browser: search/Verken Search in de browser.md
         - Geocoderen met Curl: search/Geocoderen met Curl.md
         - Casus - maak een kaart met Locatie zoeken: search/Casus - Maak een kaart met Locatie zoeken.md
