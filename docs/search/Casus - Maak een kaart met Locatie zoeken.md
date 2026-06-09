@@ -26,7 +26,7 @@ Voor deze opdracht gaan we er van uit dat je deze voorbeeldkaart geanalyseerd he
 
 # Casus – Voeg een zoekcomponent toe aan een MapLibre‑kaart met de PDOK Location API
 
-In deze casus leer je hoe je een  kaart uibtreid met een zoekfunctie die adressen en locaties opzoekt via de **PDOK Location API (OGC API – Features)**.  
+In deze casus leer je hoe je een  kaart uitbreidt met een zoekfunctie die adressen en locaties opzoekt via de **PDOK Location API (OGC API – Features)**.  
 We gebruiken hierbij het `search` endpoint van de Location API om op basis van vrije tekst features op te halen, inclusief hun geometrie.  De geometrie gebruiken we vervolgens om de kaart naar de gekozen locatie te laten inzoomen.  
 
 #### Pas index.html aan
