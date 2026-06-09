@@ -1,6 +1,6 @@
 # Introductie
 
-Welkom bij de Leermodule “Geodata bevragen en gebruiken met de OGC API’s van PDOK” !
+Welkom bij de Location API Leermodule !
 
 In deze leermodule ga je aan de slag met de Location API van [PDOK](https://www.pdok.nl/) (Publieke Dienstverlening Op de Kaart). PDOK is hét geodataplatform van de Nederlandse overheid. Je leert in deze leermodule hoe je met behulp van de Location API geografische data kunt opzoeken op basis van tekst. Denk bijvoorbeeld aan het opzoeken van een locatie op basis van een adres. 
 
