@@ -26,3 +26,6 @@ Eerst verken je welke soorten data je via de Location API kunt opvragen en hoe z
     - JSON‑responses  
 
 De nieuwe PDOK Location API biedt een toekomstvaste, snelle en gebruiksvriendelijke manier om locaties in Nederland te vinden en te gebruiken. In dit onderdeel bouw je stap voor stap de basiskennis op om de API effectief toe te passen in eigen projecten en diensten.
+
+#### Kant-en-klaar: Generieke Geo Componenten
+Na deze module heb je zelf een zoekcomponent gebouwd. Als je Angular gebruikt, dan kun je ook gebruikmaken van het zoekcomponent van de Generieke Geo Componenten. Dit is een kant-en-klaar component dat de PDOK Location API gebruikt. Dit component wordt door het Kadaster onderhouden. Bij het doorlopen van deze leermodule kun je de open source code van dit component bekijken om te zien hoe deze API is geïmplementeerd. Lees [hier meer over de Generieke Geo Componenten](https://generiekegeocomponenten.nl/), of [bekijk een voorbeeld van het zoekcomponent](https://generiekegeocomponenten.nl/search-location).
